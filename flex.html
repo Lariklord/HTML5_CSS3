@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-con{
+            display: flex;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+        .flex-con1{
+            display: flex;
+            width: 60%;
+            border: solid 0.25em #000;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .flex-con-inl{
+            display: inline-flex;
+            border: 2px solid black;
+            margin-top: 10px;
+   
+        }
+        .flex-item{
+            text-align: center;
+            font-size: 1.1em;
+            padding: 1.5em;
+            color: white;
+        }
+        .start{justify-content: flex-start;}
+        .end{justify-content: flex-end;}
+        .center{justify-content: center;}
+        .betw{justify-content: space-between;}
+        .around{justify-content: space-around;}
+
+        .row{ flex-direction: row;}
+        .rev-row{flex-direction: row-reverse;}
+        .col{flex-direction: column;}
+        .rev-col{flex-direction: column-reverse;}
+
+        .color1{background-color: aqua;}
+        .color2{background-color: brown;}
+        .color3{background-color: chartreuse;}
+    </style>
+</head>
+<body>
+    <div class="flex-con">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+    <div class="flex-con-inl">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con row">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con rev-row">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con col">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con rev-col">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con1 row">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <div class="flex-con1 col">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <h3>Flex-start</h3>
+    <div class="flex-con start">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <h3>Flex-end</h3>
+    <div class="flex-con end">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="flex-con center">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <h3>Between</h3>
+    <div class="flex-con betw">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+
+    <h3>Around</h3>
+    <div class="flex-con around">
+        <div class="flex-item color1">Item 1</div>
+        <div class="flex-item color2">Item 2</div>
+        <div class="flex-item color3">Item 3</div>
+    </div>
+</body>
+</html>

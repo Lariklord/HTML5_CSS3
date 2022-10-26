@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+    <style>
+      div
+      {
+        margin: 10px;
+        border: 2px groove black;
+        font-size: 20px;
+        height: auto;
+        text-align: center;
+      }
+      #header{
+        background-color: gray;
+        height: 80px;
+      }
+      #sidebar
+      {
+        background-color: azure;
+        height: 50px;
+      }
+      #main
+      {
+        background-color: aliceblue;
+        height: 200px;
+      }
+      #footer
+      {
+        background-color: gray;
+        height: 80px;
+      }
+
+
+      #sidebar1
+      {
+        background-color: azure;
+        height: 100px;
+        float: left;
+        width: 30%;
+      }
+      #main1
+      {
+        background-color: aliceblue;
+        height: 200px;
+        margin-left: 35%;
+      }
+
+      #leftSidebar{
+        background-color: azure;
+        float: left;
+        width: 20%;
+      }
+      #rightSidebar{
+        background-color: azure;
+        float: right;
+        width: 20%;
+      }
+      #main2
+      {
+        background-color: aliceblue;
+        height: 200px;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+
+      #menu
+      {
+        float: right;
+        width: 45%;
+        height: 80%;   
+      }
+      #content
+      {
+        background-color: #eee;
+        width: 45%;
+        margin-right: 50%;
+        height: 80%;
+      }
+
+     
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header">Шапка</div>
+        <div id="sidebar">Сайдбар</div>
+        <div id="main">Содержимое</div>
+        <div id="footer">Футер</div>
+    </div>
+
+    <div>
+        <div id="header">Шапка</div>
+        <div id="sidebar1">Сайдбар</div>
+        <div id="main1">Содержимое</div>
+        <div id="footer">Футер</div>
+    </div>
+
+    <div>
+        <div id="header">Шапка</div>
+        <div id="leftSidebar">Левый Сайдбар</div>
+        <div id="rightSidebar">Правый Сайдбар</div>
+        <div id="main2">Содержимое</div>
+        <div id="footer">Футер</div>
+    </div>
+   
+    <div>
+        <div id="header">Шапка</div>
+        <div id="sidebar1">Сайдбар</div>
+        <div id="main1">
+            <div id="menu">Меню</div>
+            <div id="content">Контент</div>
+        </div>
+        <div id="footer">Футер</div>
+    </div>
+</body>
+</html>

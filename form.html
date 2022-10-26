@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form method="get" autocomplete="off">
+        <p><input type="text" name="login" autocomplete="on" placeholder="Введите имя" size="18"></p>
+        <p><input type="password" name="password" maxlength="11" size="18" placeholder="Введите пароль"></p>
+        <p><input type="text" size="18" placeholder="Страна" disabled></p>
+        <p><input type="text" size="18" placeholder="Город" value="Минск" readonly></p>
+        <p>
+            <input type="submit" value="Войти">
+            <input type="reset" value="Сбросить">
+        </p>
+        <p>
+            <button type="submit" formmethod="get" formaction="index.html">Отправить</button> 
+            <button type="reset">Отмена</button>
+        </p>
+        <p>
+            <input type="text">
+            <input type="image" src="https://cdn-icons-png.flaticon.com/128/3237/3237472.png" name="submit">
+        </p>
+        <p>
+            <input type="text" dir="rtl" placeholder="myav">
+           
+        </p>
+        <p>
+            <input type="search">
+            <input type="button" value="Поиск">
+        </p>
+        <p>
+            <input type="text" list="phoneList" name="model" placeholder="Введите модель">
+            <input type="button" value="Отправить">  
+        </p>
+        <p>
+            <label for="log">Логин</label>
+            <input type="text" autofocus id="log" name="log">
+            <br>
+            <label for="pas">Пароль</label>
+            <input type="password" id="pas" name="pas">
+            <br>
+            <input type="button" value="Войти">
+        </p>
+        <p>
+            <label for="ahe">Возраст: </label>
+            <input list="nums" type="number" min="1" max="100" step="1" value="10" id="age" name="age">
+            <br>
+            1<input type="range" min="1" max="100" step="1" value="1">100
+        </p>
+        <p>
+            <input type="checkbox" checked>HTML5
+            <br>
+            <input type="checkbox">CSS3
+            <br>
+            <input type="checkbox">JavaScript
+            <br>
+            <br>
+            <input type="radio" name="gender" checked>Man
+            <br>
+            <input type="radio" name="gender">Woman
+        </p>
+        <p>
+            Выберите цвет <input type="color">
+        </p>
+        <p>
+            Email: <input placeholder="user@gmail.com" type="email">
+            Url: <input type="url">
+            Телефон: <input type="tel">
+        </p>
+        <p>
+            Дата рождения: <input type="date"><br>
+            Неделя: <input type="week"><br>
+            Дата и время: <input type="datetime-local"><br>
+            Месяц <input type="month"><br>
+            Время <input type="time"><br>
+        </p>
+        <p>
+            <input type="file" value="Выберите файл" multiple>
+            <br><br>
+            <input type="button" value="Отправить">
+        </p>
+        <p>
+            Выберите модель:<br>
+            <select multiple>
+                <option>Iphone 6</option>
+                <option selected>Iphone 7</option>
+                <option disabled>Iphone 8</option>
+            </select>
+            <br>
+            Выберите модель:<br>
+            <select>
+                <optgroup label="Apple">
+                    <option>Iphone 6</option>
+                    <option>Iphone 7</option>
+                    <option>Iphone 8</option>
+                </optgroup>
+               
+            </select>
+        </p>
+        <p>
+            Ваш комментарий:<br>
+            <textarea cols="30" rows="7"></textarea>
+        </p>
+    </form>
+    <h2>Вход на сайт</h2>
+    <form method="get">
+        <fieldset>
+            <legend>Введите данные</legend>
+            <label for="log">Логин</label>
+            <input type="text" autofocus id="log" name="log">
+            <br>
+            <label for="pas">Пароль</label>
+            <input type="password" id="pas" name="pas">
+            <br>
+            <input type="button" value="Войти">
+        </fieldset>
+    </form>
+    <datalist id="phoneList">
+        <option value="Iphone 7" label="1000"></option>
+        <option value="Iphone 8">1500</option>
+        <option value="Iphone X"></option>
+    </datalist>
+    <datalist id="nums">
+        <option value="69"></option>
+        <option value="35"></option>
+    </datalist>
+</body>
+</html>
